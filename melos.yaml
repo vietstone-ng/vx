@@ -1,0 +1,5 @@
+name: vx
+
+packages:
+  - packages/*
+  - apps/*

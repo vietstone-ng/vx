@@ -1,5 +1,6 @@
 pubspec_overrides.yaml
 .dart_tool/
+coverage/
 
 # # See https://www.dartlang.org/guides/libraries/private-files
 

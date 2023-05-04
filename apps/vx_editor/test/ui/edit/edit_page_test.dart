@@ -18,13 +18,20 @@ void main() {
     expect(find.byType(PaperView), findsOneWidget);
   });
 
-  testWidgets('PaperView can be zoomed in/out', (tester) async {
+  testWidgets('PaperView can be zoomed in/out inside InteractiveViewer',
+      (tester) async {
     await tester.pumpWidget(createEditScreen());
 
+    final zoomFind = find.byType(InteractiveViewer);
+    final zoom = tester.widget<InteractiveViewer>(zoomFind);
+
+    expect(zoomFind, findsOneWidget);
     expect(
         find.descendant(
-            of: find.byType(InteractiveViewer),
-            matching: find.byType(PaperView)),
+          of: zoomFind,
+          matching: find.byType(PaperView),
+        ),
         findsOneWidget);
+    expect(zoom.constrained, false);
   });
 }

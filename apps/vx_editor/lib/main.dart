@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vx_editor/ui/edit/edit_page_builder.dart';
 
-import 'ui/edit/edit_page.dart';
-
 void main() {
   runApp(const EditorApp());
 }

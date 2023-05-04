@@ -21,10 +21,11 @@ class EditPage extends StatelessWidget {
           const LeftSidebar(),
           Expanded(
             child: InteractiveViewer(
+              constrained: false,
               minScale: 0.1,
               maxScale: 10,
-              boundaryMargin: const EdgeInsets.all(20.0),
-              child: const Center(child: PaperViewBuilder()),
+              boundaryMargin: const EdgeInsets.all(double.infinity),
+              child: const PaperViewBuilder(),
             ),
           ),
           const RightSidebar(),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:vx_editor/ui/paper/paper_view.dart';
-import 'package:vx_editor/ui/paper/paper_view_vm.dart';
+import 'package:vx_editor/ui/common/paper/paper_view.dart';
+import 'package:vx_editor/ui/common/paper/paper_view_vm.dart';
 
 class PaperViewBuilder extends StatelessWidget {
   const PaperViewBuilder({super.key});

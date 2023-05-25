@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:vx_editor/ui/edit/edit_page_vm.dart';
-import 'package:vx_editor/ui/edit/right_sidebar.dart';
-import 'package:vx_editor/ui/paper/paper_view_builder.dart';
+import 'package:vx_editor/ui/pages/edit/edit_page_vm.dart';
+import 'package:vx_editor/ui/pages/edit/right_sidebar.dart';
+import 'package:vx_editor/ui/common/paper/paper_view_builder.dart';
 
 import 'left_sidebar.dart';
 

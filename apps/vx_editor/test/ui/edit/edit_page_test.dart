@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:vx_editor/ui/edit/edit_page_builder.dart';
-import 'package:vx_editor/ui/edit/left_sidebar.dart';
-import 'package:vx_editor/ui/edit/right_sidebar.dart';
-import 'package:vx_editor/ui/paper/paper_view.dart';
+import 'package:vx_editor/ui/pages/edit/edit_page_builder.dart';
+import 'package:vx_editor/ui/pages/edit/left_sidebar.dart';
+import 'package:vx_editor/ui/pages/edit/right_sidebar.dart';
+import 'package:vx_editor/ui/common/paper/paper_view.dart';
 
 Widget createEditScreen() {
   return const MaterialApp(home: EditPageBuilder());

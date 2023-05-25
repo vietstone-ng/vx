@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pdf/pdf.dart';
-import 'package:vx_editor/ui/paper/paper_view_vm.dart';
+import 'package:vx_editor/ui/common/paper/paper_view_vm.dart';
 
 // TODO: consider to remove `pdf` package
 final _paperFormat = PdfPageFormat.a3.landscape.copyWith(

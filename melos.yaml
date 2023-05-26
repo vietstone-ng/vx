@@ -2,4 +2,4 @@ name: vx
 
 packages:
   - packages/*
-  - apps/*
+  - vx_editor

@@ -53,10 +53,10 @@ packages:
     dependency: transitive
     description:
       name: cli_util
-      sha256: "66f86e916d285c1a93d3b79587d94bd71984a66aac4ff74e524cfa7877f1395c"
+      sha256: b8db3080e59b2503ca9e7922c3df2072cf13992354d5e944074ffa836fba43b7
       url: "https://pub.dev"
     source: hosted
-    version: "0.3.5"
+    version: "0.4.0"
   collection:
     dependency: transitive
     description:
@@ -85,18 +85,18 @@ packages:
     dependency: transitive
     description:
       name: glob
-      sha256: "4515b5b6ddb505ebdd242a5f2cc5d22d3d6a80013789debfbda7777f47ea308c"
+      sha256: "0e7014b3b7d4dac1ca4d6114f82bf1782ee86745b9b42a92c9289c23d8a0ab63"
       url: "https://pub.dev"
     source: hosted
-    version: "2.1.1"
+    version: "2.1.2"
   graphs:
     dependency: transitive
     description:
       name: graphs
-      sha256: "772db3d53d23361d4ffcf5a9bb091cf3ee9b22f2be52cd107cd7a2683a89ba0e"
+      sha256: aedc5a15e78fc65a6e23bcd927f24c64dd995062bcd1ca6eda65a3cff92a4d19
       url: "https://pub.dev"
     source: hosted
-    version: "2.3.0"
+    version: "2.3.1"
   http:
     dependency: transitive
     description:
@@ -141,10 +141,10 @@ packages:
     dependency: "direct dev"
     description:
       name: melos
-      sha256: "993ac467e7a36bd832a6cdabbe18a0487c30bc52b5cca14e476a824679ebdce0"
+      sha256: ccbb6ecd8bb3f08ae8f9ce22920d816bff325a98940c845eda0257cd395503ac
       url: "https://pub.dev"
     source: hosted
-    version: "3.0.1"
+    version: "3.1.0"
   meta:
     dependency: transitive
     description:

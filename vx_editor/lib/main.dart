@@ -36,19 +36,19 @@ class _SignInSwithcher extends StatelessWidget {
     return StreamBuilder(
       stream: authenBloc.stream,
       builder: (context, snapshot) {
+        if (snapshot.hasError) {
+          final message = snapshot.error?.toString() ?? '';
+          return _ErrorScreen(message: message);
+        }
+
         final user = snapshot.data;
         final state = snapshot.connectionState;
 
-        if (state != ConnectionState.active) {
+        if (snapshot.connectionState == ConnectionState.waiting) {
           return Container(
               color: Colors.white,
               alignment: Alignment.center,
               child: const CircularProgressIndicator());
-        }
-
-        if (snapshot.hasError) {
-          final message = snapshot.error?.toString() ?? '';
-          return _ErrorScreen(message: message);
         }
 
         return user != null ? const HomeScreen() : const SignInScreen();

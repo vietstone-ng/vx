@@ -1,5 +1,5 @@
-abstract class Bloc {
+abstract class Bloc<T> {
   void dispose();
 
-  Stream get stream;
+  Stream<T> get stream;
 }

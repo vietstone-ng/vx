@@ -16,7 +16,9 @@ class MockAuthenBloc implements AuthenBloc {
     scheduleMicrotask(() {
       Future.delayed(
         const Duration(seconds: 1),
-        () => _subject.add(User()),
+        () => _subject.add(User()), // have account
+        // () => _subject.add(null), // no account
+        // () => _subject.addError("No internet"), // network error
       );
     });
   }

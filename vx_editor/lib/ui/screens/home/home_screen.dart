@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:vx_editor/ui/pages/edit/edit_page.dart';
+import 'package:vx_editor/ui/pages/edit/edit_page_vm.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -66,6 +68,16 @@ class _HomeScreenState extends State<HomeScreen> {
                 },
                 icon: const Icon(Icons.directions_walk_sharp),
               ),
+            ),
+            floatingActionButton: FloatingActionButton(
+              child: const Icon(Icons.add),
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (ctx) => EditPage(vm: EditPageVM()),
+                  ),
+                );
+              },
             ),
           ),
         ),
